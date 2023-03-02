@@ -1,0 +1,89 @@
+/*=============== Section tile ===============*/
+.section__title {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin-bottom: 1.1rem;
+}
+
+/*=============== Input ===============*/
+
+.input__box {
+  label {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: var(--label-color);
+  }
+
+  .custom__input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 1.1rem;
+    column-gap: 5px;
+    border: 0.1rem solid var(--input-text-color);
+    border-radius: 1.2rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1.6rem;
+
+    i {
+      font-size: 1.5rem;
+      color: var(--input-text-color);
+    }
+
+    input {
+      width: 100%;
+      padding: 1rem 1rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: var(--input-text-color);
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+/*=============== Location ===============*/
+.location__input {
+  display: flex;
+  column-gap: 2.3rem;
+}
+
+/*=============== Save ===============*/
+.save {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-top: 1.7rem;
+
+  input[type="checkbox"] {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 0.4rem;
+    border: 1px solid #828282;
+  }
+
+  label {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: var(--label-color);
+  }
+}
+
+/*=============== Button ===============*/
+.submit__box {
+  margin-top: 2.049rem;
+  text-align: end;
+
+  .btn {
+    padding: 1.7rem 4.5rem;
+    border-radius: 1.2rem;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+}

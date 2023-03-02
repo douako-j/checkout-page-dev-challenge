@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--=============== Font Awesome ===============-->
+    <script
+      src="https://kit.fontawesome.com/4fea26a6a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Checkout page</title>
+  </head>
+  <body>
+    <div class="main__container">
+      <h1>Checkout</h1>
+      <!--=============== Main ===============-->
+      <main class="main" id="main">
+        <form action="#" class="form">
+          <!--========== Checkout ==========-->
+          <section class="checkout">
+            <div class="product">
+              <img src="./assets/images/photo1.png" alt="product" />
+              <div class="product__infos">
+                <h4 class="product__title">Vintage Backbag</h4>
+
+                <p class="product__price">
+                  $54.99 <span class="product__discount">$94.99</span>
+                </p>
+
+                <div class="product__quantity">
+                  <span class="quantity__btn" id="quantity-moins">-</span>
+
+                  <input type="text" name="quantity" id="quantity1" value="3" />
+
+                  <span class="quantity__btn" id="quantity-plus">+</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product">
+              <img src="./assets/images/photo2.png" alt="product" />
+              <div class="product__infos">
+                <h4 class="product__title">Levi Shoes</h4>
+
+                <p class="product__price">
+                  $74.99 <span class="product__discount">$124.99</span>
+                </p>
+
+                <div class="product__quantity">
+                  <span class="quantity__btn" id="quantity-moins">-</span>
+
+                  <input type="text" name="quantity" id="quantity1" value="3" />
+
+                  <span class="quantity__btn" id="quantity-plus">+</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="checkout__bill">
+              <hr />
+
+              <div class="checkout__bill-line">
+                <span class="line-title">Shipping</span>
+                <span class="price">$19</span>
+              </div>
+
+              <hr />
+
+              <div class="checkout__bill-line">
+                <span class="line-title">Total</span>
+                <span class="price">$148.98</span>
+              </div>
+            </div>
+          </section>
+
+          <!--========== Checkout-form ==========-->
+          <div class="checkout__form">
+            <!--========== Contact ==========-->
+            <section class="contact">
+              <h2 class="section__title">Contact infomation</h2>
+
+              <div class="input__box">
+                <label for="email">E-mail</label>
+                <div class="custom__input">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email..."
+                  />
+                </div>
+              </div>
+
+              <div class="input__box">
+                <label for="phone">Phone</label>
+                <div class="custom__input">
+                  <i class="fa-solid fa-phone"></i>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter your phone..."
+                  />
+                </div>
+              </div>
+            </section>
+
+            <!--========== Shipping ==========-->
+            <section class="shipping">
+              <h2 class="section__title">Shipping address</h2>
+
+              <div class="input__box">
+                <label for="name">Full name</label>
+                <div class="custom__input">
+                  <i class="fa-solid fa-circle-user"></i>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your full name..."
+                  />
+                </div>
+              </div>
+
+              <div class="input__box">
+                <label for="address">Address</label>
+                <div class="custom__input">
+                  <i class="fa-solid fa-house"></i>
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Your address..."
+                  />
+                </div>
+              </div>
+
+              <div class="input__box">
+                <label for="city">City</label>
+                <div class="custom__input">
+                  <i class="fa-solid fa-city"></i>
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    placeholder="Your city..."
+                  />
+                </div>
+              </div>
+
+              <div class="location__input">
+                <div class="input__box">
+                  <label for="country">Country</label>
+                  <div class="custom__input">
+                    <i class="fa-solid fa-city"></i>
+                    <input
+                      type="text"
+                      name="country"
+                      id="country"
+                      placeholder="Your city..."
+                    />
+                  </div>
+                </div>
+
+                <div class="input__box">
+                  <label for="postal">Postal code</label>
+                  <div class="custom__input">
+                    <i class="fa-solid fa-city"></i>
+                    <input
+                      type="text"
+                      name="postal"
+                      id="postal"
+                      placeholder="Your postal code.."
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="save">
+                <input type="checkbox" id="save" name="save" />
+                <label for="save">Save this information for next time</label>
+              </div>
+
+              <div class="submit__box">
+                <input type="submit" value="Continue" class="btn" />
+              </div>
+            </section>
+          </div>
+        </form>
+      </main>
+
+      <!--=============== Footer ===============-->
+      <footer class="footer" id="footer">
+        <p>
+          created by douako-j -
+          <a href="https://devchallenges.io/">devChallenges.io</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
