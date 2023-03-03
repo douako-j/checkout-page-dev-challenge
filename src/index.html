@@ -29,11 +29,22 @@
                 </p>
 
                 <div class="product__quantity">
-                  <span class="quantity__btn" id="quantity-moins">-</span>
+                  <span
+                    class="quantity__btn quantity__moins"
+                    data-id="quantity1"
+                    >-</span
+                  >
 
-                  <input type="text" name="quantity" id="quantity1" value="3" />
+                  <input
+                    type="text"
+                    name="quantity1"
+                    id="quantity1"
+                    value="1"
+                  />
 
-                  <span class="quantity__btn" id="quantity-plus">+</span>
+                  <span class="quantity__btn quantity__plus" data-id="quantity1"
+                    >+</span
+                  >
                 </div>
               </div>
             </div>
@@ -48,11 +59,22 @@
                 </p>
 
                 <div class="product__quantity">
-                  <span class="quantity__btn" id="quantity-moins">-</span>
+                  <span
+                    class="quantity__btn quantity__moins"
+                    data-id="quantity2"
+                    >-</span
+                  >
 
-                  <input type="text" name="quantity" id="quantity1" value="3" />
+                  <input
+                    type="text"
+                    name="quantity2"
+                    id="quantity2"
+                    value="1"
+                  />
 
-                  <span class="quantity__btn" id="quantity-plus">+</span>
+                  <span class="quantity__btn quantity__plus" data-id="quantity2"
+                    >+</span
+                  >
                 </div>
               </div>
             </div>
@@ -69,7 +91,7 @@
 
               <div class="checkout__bill-line">
                 <span class="line-title">Total</span>
-                <span class="price">$148.98</span>
+                <span class="price total__price"></span>
               </div>
             </div>
           </section>
@@ -155,12 +177,13 @@
                   <label for="country">Country</label>
                   <div class="custom__input">
                     <i class="fa-solid fa-city"></i>
-                    <input
-                      type="text"
-                      name="country"
-                      id="country"
-                      placeholder="Your city..."
-                    />
+                    <select name="country" id="country">
+                      <option value="">Your country...</option>
+                      <option value="benin">Bénin</option>
+                      <option value="canada">Canada</option>
+                      <option value="france">France</option>
+                      option>
+                    </select>
                   </div>
                 </div>
 
@@ -182,6 +205,8 @@
                 <input type="checkbox" id="save" name="save" />
                 <label for="save">Save this information for next time</label>
               </div>
+
+              <ul class="validation" id="validation"></ul>
 
               <div class="submit__box">
                 <input type="submit" value="Continue" class="btn" />
